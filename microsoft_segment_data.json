@@ -1,0 +1,123 @@
+{
+  "company_info": {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "fiscal_year_end": "June 30",
+    "currency": "USD",
+    "market_cap": "3.8T",
+    "last_updated": "Q4 FY2025 (July 30, 2025)"
+  },
+  "business_segments": [
+    {
+      "name": "Productivity and Business Processes",
+      "description": "Products and services for productivity, communication, and information services",
+      "key_products": [
+        "Office 365",
+        "Microsoft Teams",
+        "LinkedIn",
+        "Dynamics 365",
+        "Microsoft 365 Consumer"
+      ],
+      "q4_2025_revenue": 33.1,
+      "q4_2024_revenue": 28.5,
+      "growth_rate": 16,
+      "fy2025_revenue": 130.5,
+      "fy2024_revenue": 116.5,
+      "annual_growth": 13,
+      "operating_income_q4": 18.3,
+      "key_metrics": {
+        "office_365_commercial_growth": 15,
+        "linkedin_revenue_growth": 9,
+        "dynamics_365_growth": 19,
+        "microsoft_365_consumer_subscribers": 89.0
+      }
+    },
+    {
+      "name": "Intelligent Cloud",
+      "description": "Server products and cloud services including Azure",
+      "key_products": [
+        "Azure",
+        "SQL Server",
+        "Windows Server",
+        "GitHub",
+        "Enterprise Services"
+      ],
+      "q4_2025_revenue": 29.9,
+      "q4_2024_revenue": 23.7,
+      "growth_rate": 26,
+      "fy2025_revenue": 115.0,
+      "fy2024_revenue": 96.8,
+      "annual_growth": 20,
+      "operating_income_q4": 13.9,
+      "key_metrics": {
+        "azure_annual_revenue": 75.0,
+        "azure_growth_rate": 34,
+        "azure_quarterly_growth": 39,
+        "server_products_growth": -5
+      }
+    },
+    {
+      "name": "More Personal Computing",
+      "description": "Windows, devices, gaming, and search products",
+      "key_products": [
+        "Windows",
+        "Xbox",
+        "Surface",
+        "Bing Search",
+        "Gaming Services"
+      ],
+      "q4_2025_revenue": 13.5,
+      "q4_2024_revenue": 12.4,
+      "growth_rate": 9,
+      "fy2025_revenue": 58.7,
+      "fy2024_revenue": 54.7,
+      "annual_growth": 7,
+      "operating_income_q4": 2.1,
+      "key_metrics": {
+        "gaming_revenue_growth": 50,
+        "xbox_content_services_growth": 61,
+        "xbox_hardware_decline": -30,
+        "windows_oem_growth": 3,
+        "search_advertising_growth": 21
+      }
+    }
+  ],
+  "quarterly_performance": {
+    "q4_2025": {
+      "total_revenue": 76.4,
+      "net_income": 27.2,
+      "operating_income": 34.3,
+      "earnings_per_share": 3.65,
+      "microsoft_cloud_revenue": 46.7
+    },
+    "q4_2024": {
+      "total_revenue": 64.7,
+      "net_income": 22.0,
+      "operating_income": 27.9,
+      "earnings_per_share": 2.95,
+      "microsoft_cloud_revenue": 36.8
+    }
+  },
+  "annual_performance": {
+    "fy2025": {
+      "total_revenue": 281.7,
+      "net_income": 101.8,
+      "operating_income": 128.5,
+      "earnings_per_share": 13.64
+    },
+    "fy2024": {
+      "total_revenue": 245.1,
+      "net_income": 88.1,
+      "operating_income": 109.4,
+      "earnings_per_share": 11.86
+    }
+  },
+  "key_insights": [
+    "Azure surpassed $75B in annual revenue, growing 34%",
+    "Microsoft Cloud revenue reached $46.7B in Q4, up 27%",
+    "Gaming segment boosted by Activision Blizzard acquisition",
+    "AI business on track to exceed $10B annual run rate",
+    "500M monthly active users across gaming platforms",
+    "LinkedIn Premium surpassed $2.5B in annual revenue"
+  ]
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Corporation - Financial Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="company-info">
+                    <div class="logo-section">
+                        <div class="logo-placeholder">MSFT</div>
+                        <div>
+                            <h1 class="company-name">Microsoft Corporation</h1>
+                            <p class="ticker">NASDAQ: MSFT | Market Cap: $3.8T</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="period-toggle">
+                    <button class="btn btn--sm toggle-btn active" data-period="quarterly">Q4 2025</button>
+                    <button class="btn btn--sm toggle-btn" data-period="annual">FY 2025</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Key Metrics Overview -->
+            <section class="metrics-overview">
+                <h2>Financial Performance</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3 class="metric-label">Total Revenue</h3>
+                        <div class="metric-value" id="total-revenue">$281.7B</div>
+                        <div class="metric-change positive" id="revenue-change">+15%</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 class="metric-label">Net Income</h3>
+                        <div class="metric-value" id="net-income">$101.8B</div>
+                        <div class="metric-change positive" id="income-change">+16%</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 class="metric-label">Operating Income</h3>
+                        <div class="metric-value" id="operating-income">$128.5B</div>
+                        <div class="metric-change positive" id="operating-change">+17%</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 class="metric-label">Earnings Per Share</h3>
+                        <div class="metric-value" id="eps">$13.64</div>
+                        <div class="metric-change positive" id="eps-change">+15%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Segments -->
+            <section class="segments-section">
+                <h2>Business Segments</h2>
+                <div class="segments-grid">
+                    <div class="segment-card" data-segment="productivity">
+                        <div class="segment-header">
+                            <h3>Productivity and Business Processes</h3>
+                            <div class="segment-revenue" id="productivity-revenue">$33.1B</div>
+                        </div>
+                        <div class="segment-growth positive" id="productivity-growth">+16%</div>
+                        <div class="segment-products">
+                            <span class="product-tag">Office 365</span>
+                            <span class="product-tag">Teams</span>
+                            <span class="product-tag">LinkedIn</span>
+                            <span class="product-tag">Dynamics 365</span>
+                        </div>
+                        <div class="segment-details hidden" id="productivity-details">
+                            <div class="detail-item">
+                                <span>Office 365 Commercial Growth:</span>
+                                <span>+15%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>LinkedIn Revenue Growth:</span>
+                                <span>+9%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Dynamics 365 Growth:</span>
+                                <span>+19%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Microsoft 365 Consumer Subscribers:</span>
+                                <span>89.0M</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--sm btn--outline expand-btn">View Details</button>
+                    </div>
+
+                    <div class="segment-card" data-segment="cloud">
+                        <div class="segment-header">
+                            <h3>Intelligent Cloud</h3>
+                            <div class="segment-revenue" id="cloud-revenue">$29.9B</div>
+                        </div>
+                        <div class="segment-growth positive" id="cloud-growth">+26%</div>
+                        <div class="segment-products">
+                            <span class="product-tag">Azure</span>
+                            <span class="product-tag">SQL Server</span>
+                            <span class="product-tag">Windows Server</span>
+                            <span class="product-tag">GitHub</span>
+                        </div>
+                        <div class="segment-details hidden" id="cloud-details">
+                            <div class="detail-item">
+                                <span>Azure Annual Revenue:</span>
+                                <span>$75.0B</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Azure Growth Rate:</span>
+                                <span>+34%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Azure Quarterly Growth:</span>
+                                <span>+39%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Server Products Growth:</span>
+                                <span>-5%</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--sm btn--outline expand-btn">View Details</button>
+                    </div>
+
+                    <div class="segment-card" data-segment="computing">
+                        <div class="segment-header">
+                            <h3>More Personal Computing</h3>
+                            <div class="segment-revenue" id="computing-revenue">$13.5B</div>
+                        </div>
+                        <div class="segment-growth positive" id="computing-growth">+9%</div>
+                        <div class="segment-products">
+                            <span class="product-tag">Windows</span>
+                            <span class="product-tag">Xbox</span>
+                            <span class="product-tag">Surface</span>
+                            <span class="product-tag">Bing</span>
+                        </div>
+                        <div class="segment-details hidden" id="computing-details">
+                            <div class="detail-item">
+                                <span>Gaming Revenue Growth:</span>
+                                <span>+50%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Xbox Content Services Growth:</span>
+                                <span>+61%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Xbox Hardware:</span>
+                                <span>-30%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Windows OEM Growth:</span>
+                                <span>+3%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Search Advertising Growth:</span>
+                                <span>+21%</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--sm btn--outline expand-btn">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <h2>Performance Analytics</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Revenue Comparison</h3>
+                        <div class="chart-wrapper" style="position: relative; height: 300px;">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Revenue Distribution</h3>
+                        <div class="chart-wrapper" style="position: relative; height: 300px;">
+                            <canvas id="distributionChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Growth Rates</h3>
+                        <div class="chart-wrapper" style="position: relative; height: 300px;">
+                            <canvas id="growthChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Insights -->
+            <section class="insights-section">
+                <h2>Key Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">🚀</div>
+                        <div class="insight-content">
+                            <h4>Azure Milestone</h4>
+                            <p>Azure surpassed $75B in annual revenue, growing 34%</p>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">☁️</div>
+                        <div class="insight-content">
+                            <h4>Microsoft Cloud</h4>
+                            <p>Microsoft Cloud revenue reached $46.7B in Q4, up 27%</p>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🎮</div>
+                        <div class="insight-content">
+                            <h4>Gaming Growth</h4>
+                            <p>Gaming segment boosted by Activision Blizzard acquisition</p>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🤖</div>
+                        <div class="insight-content">
+                            <h4>AI Business</h4>
+                            <p>AI business on track to exceed $10B annual run rate</p>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">👥</div>
+                        <div class="insight-content">
+                            <h4>Gaming Platform</h4>
+                            <p>500M monthly active users across gaming platforms</p>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">💼</div>
+                        <div class="insight-content">
+                            <h4>LinkedIn Premium</h4>
+                            <p>LinkedIn Premium surpassed $2.5B in annual revenue</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
